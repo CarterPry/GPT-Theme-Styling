@@ -1,0 +1,125 @@
+/* 
+Name: Flamengo
+Description: A custom style by theme flamengo to ChatGPT Styles
+Collaborator: Mateus Neres
+Credits: https://github.com/mateusneresrb/
+Illustration: https://i.imgur.com/1vF5XP2.png
+*/
+
+/* \/ Background : container */
+.gstyle-background::before {
+   content: "";
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-image: url(https://ogimg.infoglobo.com.br/in/20273152-80c-5df/FT1086A/2013_667858657-2013112796509.jpg_20131129.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 15%;
+}
+
+/* Background container - TOP */
+.gstyle-background-top {
+   background: none!important;
+}
+
+/* Background container - MIDDLE */
+.gstyle-background-middle {
+   background: none!important;
+}
+
+/* Background container - BOTTOM */
+.gstyle-background-bottom {
+   background: black!important;
+} 
+
+/* \/ SideBar : Background*/
+.gstyle-sidebar {
+  background: #0e0e0e;
+  border-right: 1px solid;
+}
+
+/* SideBar: Last used item */
+.gstyle-sidebar-lastused {
+   border-radius: 3px;
+   background: #1c1c1c!important;
+}
+
+/* SideBar: Background buttons */
+.gstyle-sidebar-buttons{
+   background: none!important;
+}
+
+/* \/ Chat area - BOT*/
+.gstyle-chatarea-bot {
+   background: #500007!important;
+}
+
+/* Chat area - User*/
+.gstyle-chatarea-user {
+   background: #0E0E0E;
+}
+
+/* Chat Icon - BOT */
+.gstyle-chatarea-bot-icon {
+   background-color: black!important;
+}
+
+/* Form area - Bottom */
+.gstyle-formarea-bottom {
+   background: none!important;
+}
+
+/* Table - Header */
+.gstyle-table-header {
+   background: #0e0e0e;
+}
+
+/* Table - Container*/
+.gstyle-table-container {
+   border-color: #585858;
+   background: black!important;
+}
+
+/* Code - Header Table */
+.gstyle-code-header {
+   background: #383838;
+}
+
+/* Code - Container */
+.gstyle-code-container {
+   background: #0a0909;
+}
+
+/* Some buttons */
+.gstyle-generic-button {
+	border: red 1px solid;
+}
+
+/* Fade out */
+.gstyle-generic-fadeout {
+   display: none!important;
+}
+
+/* Some texts */
+.gstyle-generic-text {
+   color: #fff;
+   font-size: 1rem;
+}
+
+/* Texts */
+.gstyle-generic-text2 {
+   color: #fff!important;
+}
+
+/* Markdown */
+.gstyle-generic-markdown {
+   color: #fff!important;
+}
+
+/* Background white */
+.gstyle-generic-whitebg {
+   background-color: #1e1e1e;
+}
+

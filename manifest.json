@@ -1,0 +1,40 @@
+{
+    "name": "ChatGPT-Style",
+    "version": "1.2.3",
+    "description": "A styles and background change to chat gpt website",
+    "manifest_version": 3,
+    "author": "contato@carterpry.com",
+    "homepage_url": "https://github.com/carterPry/chatgpt-style",
+    "action": {
+        "default_popup": "src/index.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "16": "src/assets/icon-16.png",
+        "32": "src/assets/icon-32.png",
+        "48": "src/assets/icon-48.png",
+        "128": "src/assets/icon-128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "themes/*"
+            ],
+            "matches": [
+                "https://chatgpt.com/*"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "src/background.js"
+            ],
+            "matches": [
+                "https://chatgpt.com/*"
+            ]
+        }
+    ]
+}

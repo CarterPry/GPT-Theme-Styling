@@ -1,0 +1,153 @@
+/* 
+Name: Slack
+Description: A custom slack-themed style for ChatGPT activities in public
+Creator: Carter Pry
+Credits: https://github.com/carterPry/
+Illustration: slack.png
+*/
+
+/* General background and layout styling */
+div.items-center,
+#__next > div.overflow-hidden.w-full.h-full.relative.flex.z-0 > div.relative.flex.h-full.max-w-full.flex-1.overflow-hidden > div > main > div.flex-1.overflow-hidden > div > div > div {
+   background-color: #FFFFFF !important;  /* Slack's clean white background */
+   display: flex;
+   justify-content: flex-start; /* Align content to the left */
+}
+
+/* Sidebar styling */
+nav.h-full {
+   background: #3F0E40 !important;  /* Slack's sidebar purple */
+   color: #FFFFFF; /* White text for sidebar */
+}
+
+/* Sidebar links and headers */
+div.flex.flex-col.gap-2.pb-2.text-gray-100.text-sm a {
+   margin-top: 0;
+   padding-left: 8px;
+   color: #FFFFFF !important; /* Sidebar text is white */
+}
+
+div.flex.flex-col.gap-2.pb-2.text-gray-100.text-sm a:hover,
+div.flex.flex-col.gap-2.pb-2.text-gray-100.text-sm a.active {
+   background: #1164A3 !important;  /* Slack's blue hover/active effect */
+   color: #FFFFFF !important; /* Sidebar hover text is white */
+}
+
+/* Sidebar section headers */
+div.flex.flex-col.gap-2.pb-2.text-gray-100.text-sm a span {
+   font-weight: bold;
+   color: #E0E0E0;  /* Muted white color for section headers (Channels, Direct Messages) */
+}
+
+/* Positioning header (e.g., 'ChatGPT') to top-left like in the image */
+header {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   font-size: 20px;
+   color: #FFFFFF;
+   background: none !important;
+}
+
+/* Chat area styling */
+div.group.w-full.text-gray-800 {
+   background-color: #D9D9D9;
+   width: 90%;
+   box-shadow: 5px 5px 2px 1px black;
+   color: #1a1a1a;
+   margin: 1%;
+   border: black 2px solid;
+}
+
+div.group.w-full.bg-gray-50 {
+   box-shadow: none;
+   border: none;
+   color: #1A1A1A; /* Chat text remains black */
+}
+
+/* Message bubbles left-aligned */
+div.group.w-full.text-gray-800 {
+   justify-content: flex-start; /* Align messages from both user and assistant to the left */
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+div.group.w-full.bg-gray-50 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+/* Chat input area styled as a rectangle */
+div.reply-box {
+   background-color: #F4F5F7;
+   border: 1px solid #E0E0E0;
+   padding: 12px;
+   border-radius: 6px; /* Subtle rounding to the edges */
+   width: 100%;
+   height: 60px; /* Similar size to the input box in Slack */
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.reply-box input {
+   background-color: #FFFFFF;
+   border: 1px solid #E0E0E0;
+   padding: 10px;
+   width: 100%;
+   border-radius: 6px;
+   box-sizing: border-box;
+   font-size: 14px;
+}
+
+/* Text formatting for sent messages */
+div.text {
+   color: #1A1A1A; /* Chat text is black */
+   font-size: 14px;
+   line-height: 1.5;
+   margin-bottom: 8px;
+}
+
+/* Bot/App messages (like Salesforce, Zendesk) */
+div.app-message {
+   background-color: #F4F5F7 !important;  /* Slack's background for app messages */
+   border-left: 4px solid #2EB67D !important;  /* App color for messages like Salesforce */
+   padding: 10px;
+   margin: 8px 0;
+}
+
+/* Timestamp styling */
+span.timestamp {
+   font-size: 12px;
+   color: #616061 !important;  /* Slack's light gray timestamp color */
+   margin-left: 4px;
+}
+
+/* Chat input area */
+div.reply-box {
+   background-color: #F4F5F7;
+   border: 1px solid #E0E0E0;
+   padding: 10px;
+   border-radius: 6px;
+   display: flex;
+   align-items: center;
+}
+
+input {
+   background-color: #FFFFFF;
+   padding: 10px;
+   border: 1px solid #E0E0E0;
+   border-radius: 6px;
+   box-sizing: border-box;
+   width: 100%;
+   font-size: 14px;
+   height: 40px; /* Matching the height of Slack's input area */
+}
+
+/* Aligning everything to the left for Slack-like appearance */
+div.group.w-full.text-gray-800 {
+   text-align: left !important; /* Ensures all text starts from the left */
+}
